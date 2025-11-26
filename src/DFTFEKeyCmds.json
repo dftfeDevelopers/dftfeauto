@@ -1,0 +1,348 @@
+{
+ "gs": {
+  "Global": {
+   "mode": [
+    "set SOLVER MODE",
+    "GS"
+   ],
+   "verb": [
+    "set VERBOSITY",
+    5
+   ],
+   "gpu": [
+    "set USE GPU",
+    true
+   ],
+   "writeStructEF": [
+    "set WRITE STRUCTURE ENERGY FORCES DATA POST PROCESS",
+    true
+   ]
+  },
+  "Geometry": {
+   "natoms": [
+    "set NATOMS",
+    0
+   ],
+   "ntypes": [
+    "set NATOM TYPES",
+    0
+   ],
+   "coordsFile": ["set ATOMIC COORDINATES FILE", 
+     "coordinates.inp"],
+   "domainFile": ["set DOMAIN VECTORS FILE", 
+     "domainVectors.inp"]
+  },
+  "Boundary conditions": {
+   "p1": [
+    "set PERIODIC1",
+    false
+   ],
+   "p2": [
+    "set PERIODIC2",
+    false
+   ],
+   "p3": [
+    "set PERIODIC3",
+    false
+   ]
+  },
+  "GPU": {
+   "useGPU": [
+    "set USE GPU",
+    false
+   ],
+   "useELPA": [
+    "set USE ELPA GPU KERNEL",
+    false
+   ]
+  },
+  "Post-processing Options": {
+   "printKin": [
+    "set PRINT KINETIC ENERGY ",
+    true
+   ],
+   "writeDensityQuad": [
+    "set WRITE DENSITY QUAD DATA",
+    false
+   ]
+  },
+  "Finite element mesh parameters": {
+   "feorder": [
+    "set POLYNOMIAL ORDER",
+    4
+   ],
+   "feorderES": [
+    "set POLYNOMIAL ORDER ELECTROSTATICS",
+    6
+   ],
+   "Auto mesh generation parameters": {
+    "meshAt": [
+     "set MESH SIZE AT ATOM",
+     0.06
+    ],
+    "meshAround": [
+     "set MESH SIZE AROUND ATOM",
+     0.45
+    ],
+    "atomBallRad": [
+     "set ATOM BALL RADIUS",
+     4.0
+    ],
+    "innerAtomBallRad": [
+     "set INNER ATOM BALL RADIUS",
+     0.5
+    ]
+   }
+  },
+  "DFT functional parameters": {
+   "xc": [
+    "set EXCHANGE CORRELATION TYPE",
+    "LDA-PW"
+   ],
+   "psp": [
+    "set PSEUDOPOTENTIAL CALCULATION",
+    false
+   ],
+   "spin": [
+    "set SPIN POLARIZATION",
+    0
+   ],
+   "startmag": [
+    "set START MAGNETIZATION",
+    0
+   ]
+  },
+  "SCF parameters": {
+   "mixParam": [
+    "set MIXING PARAMETER",
+    0.2
+   ],
+   "mixMethod": [
+    "set MIXING METHOD",
+    "ANDERSON"
+   ],
+   "energyEachIter": [
+    "set COMPUTE ENERGY EACH ITER",
+    false
+   ],
+   "startwfc": [
+    "set STARTING WFC",
+    "RANDOM"
+   ],
+   "temp": [
+    "set TEMPERATURE",
+    10
+   ],
+   "tol": [
+    "set TOLERANCE",
+    1e-05
+   ],
+   "Eigen-solver parameters": {
+    "chebTol": [
+     "set CHEBYSHEV FILTER TOLERANCE",
+     0.0001
+    ],
+    "ortho": [
+     "set ORTHOGONALIZATION TYPE",
+     "CGS"
+    ]
+   }
+  }
+ },
+ "inv": {
+  "Global": {
+   "mode": [
+    "set SOLVER MODE",
+    "INVERSE"
+   ]
+  },
+  "Inverse DFT parameters": {
+   "bfgsTol": [
+    "set TOL FOR BFGS",
+    1e-12
+   ],
+   "bfgsLS": [
+    "set BFGS LINE SEARCH",
+    1
+   ],
+   "bfgsLSTol": [
+    "set TOL FOR BFGS LINE SEARCH",
+    1e-06
+   ],
+   "bfgsHist": [
+    "set BFGS HISTORY",
+    100
+   ],
+   "bfgsMaxIter": [
+    "set BFGS MAX ITERATIONS",
+    10000
+   ],
+   "readFEDensity": [
+    "set READ FE DENSITY DATA",
+    false
+   ],
+   "readVxc": [
+    "set READ VXC DATA",
+    false
+   ],
+   "vxcInPostfix": [
+    "set POSTFIX TO THE FILENAME FOR READING VXC DATA",
+    "vxcData_mesh0p06_ball6p0_temp10_1_20"
+   ],
+   "writeVxc": [
+    "set WRITE VXC DATA",
+    true
+   ],
+   "vxcFolder": [
+    "set FOLDER FOR VXC DATA",
+    "vxcDataOut"
+   ],
+   "vxcOutPostfix": [
+    "set POSTFIX TO THE FILENAME FOR WRITING VXC DATA",
+    "vxcData_1"
+   ],
+   "vxcWriteFreq": [
+    "set FREQUENCY FOR WRITING VXC",
+    30
+   ],
+   "rhoTolConst": [
+    "set RHO TOL FOR CONSTRAINTS",
+    1e-06
+   ],
+   "vxcUnifDomain": [
+    "set VXC MESH DOMAIN SIZE",
+    6.0
+   ],
+   "vxcMeshAtAtom": [
+    "set VXC MESH SIZE NEAR ATOM",
+    0.06
+   ],
+   "sizeInterp": [
+    "set BLOCK SIZE OF INTERPOLATE",
+    14
+   ],
+   "initChebyTol": [
+    "set INITIAL TOL FOR CHEBYSHEV FILTERING",
+    1e-07
+   ],
+   "alpha1": [
+    "set ALPHA1 FOR WEIGHTS FOR LOSS FUNCTION",
+    0.0
+   ],
+   "alpha2": [
+    "set ALPHA2 FOR WEIGHTS FOR LOSS FUNCTION",
+    0.0
+   ],
+   "tauLoss": [
+    "set TAU FOR WEIGHTS FOR LOSS FUNCTION",
+    1e-05
+   ],
+   "tauVxBC": [
+    "set TAU FOR WEIGHTS FOR SETTING VX BC",
+    1e-08
+   ],
+   "tauFA": [
+    "set TAU FOR WEIGHTS FOR SETTING FABC",
+    0.001
+   ],
+   "fracTol": [
+    "set TOL FOR FRACTIONAL OCCUPANCY",
+    1e-08
+   ],
+   "degenTol": [
+    "set TOL FOR DEGENERACY",
+    0.005
+   ],
+   "factorLDAVxc": [
+    "set FACTOR FOR LDA VXC",
+    0.0
+   ],
+   "readGaussian": [
+    "set READ GAUSSIAN DATA AS INPUT",
+    true
+   ],
+   "readSlater": [
+    "set READ SLATER DATA AS INPUT",
+    false
+   ],
+   "useFABC": [
+    "set SET FERMIAMALDI IN THE FAR FIELD AS INPUT",
+    true
+   ],
+   "useDeltaRho": [
+    "set USE DELTA RHO CORRECTION",
+    true
+   ],
+   "aoDMPrimary": [
+    "set GAUSSIAN DENSITY FOR PRIMARY RHO SPIN UP",
+    "DensityMatrix_HBCI_spin0"
+   ],
+   "aoDMSecondary": [
+    "set GAUSSIAN DENSITY FOR DFT RHO SPIN UP",
+    "DensityMatrx_lda_ccpvtz_inputBasis_spin0"
+   ],
+   "atomCoords": [
+    "set ATOMIC ORBITAL ATOMIC COORD FILE",
+    "AtomicCoords"
+   ],
+   "aoS": [
+    "set GAUSSIAN S MATRIX FILE",
+    "SENT"
+   ]
+  },
+  "POST PROCESS": {
+   "writeVTU": [
+    "set WRITE VTU FILE",
+    true
+   ],
+   "interpToPts": [
+    "set INTERPOLATE TO POINTS",
+    true
+   ],
+   "readPts": [
+    "set READS POINTS FROM FILE",
+    false
+   ],
+   "ppOutFname": [
+    "set FILENAME FOR OUTPUT",
+    "vxcFinalpp_vxc0p06_ball6p0_ldaFrac1p0_6_135"
+   ],
+   "xtart": [
+    "set STARTING X",
+    0.0
+   ],
+   "ystart": [
+    "set STARTING Y",
+    15.0
+   ],
+   "zstart": [
+    "set STARTING Z",
+    -15.0
+   ],
+   "xend": [
+    "set ENDING X",
+    0.0
+   ],
+   "yend": [
+    "set ENDING Y",
+    0.0
+   ],
+   "zend": [
+    "set ENDING Z",
+    15.0
+   ],
+   "nx": [
+    "set NUMBER OF POINTS ALONG X DIRECTION",
+    1
+   ],
+   "ny": [
+    "set NUMBER OF POINTS ALONG Y DIRECTION",
+    1
+   ],
+   "nz": [
+    "set NUMBER OF POINTS ALONG Z DIRECTION",
+    6000
+   ]
+  }
+ }
+}
