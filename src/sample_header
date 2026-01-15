@@ -1,0 +1,6 @@
+import numpy as np
+from pyscf import gto, dft, scf
+import math
+
+
+# definition of target molecule #

@@ -1,0 +1,2 @@
+source ~/.bashrc
+conda activate /autofs/nccs-svm1_home1/bikash/conda_env/pytorch
