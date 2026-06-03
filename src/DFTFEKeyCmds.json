@@ -130,6 +130,12 @@
     true
    ]
   },
+  "Poisson problem parameters": {
+   "poissonGPUMode": [
+    "set GPU MODE",
+    false
+   ]
+  },
   "Post-processing Options": {
    "printKin": [
     "set PRINT KINETIC ENERGY ",

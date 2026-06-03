@@ -56,7 +56,8 @@
     "wfcBlockSize": 400,
     "numKSWfc": 0,
     "ortho": "Auto",
-    "subspaceProjShepGpu": false
+    "subspaceProjShepGpu": false,
+    "poissonGPUMode": false
   },
   "inv": {
     "mode": "INVERSE",

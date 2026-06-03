@@ -83,7 +83,8 @@
     "wfcBlockSize": 50,
     "numKSWfc": 10,
     "ortho": "CGS",
-    "subspaceProjShepGpu": true
+    "subspaceProjShepGpu": true,
+    "poissonGPUMode": true
   },
   "LiHs:LiH_02.39": {
     "symbols": [
@@ -170,6 +171,7 @@
     "wfcBlockSize": 50,
     "numKSWfc": 10,
     "ortho": "CGS",
-    "subspaceProjShepGpu": true
+    "subspaceProjShepGpu": true,
+    "poissonGPUMode": true
   }
 }
