@@ -15,7 +15,7 @@
    ],
    "writeStructEF": [
     "set WRITE STRUCTURE ENERGY FORCES DATA POST PROCESS",
-    true
+    false
    ]
   },
   "Geometry": {
@@ -27,23 +27,89 @@
     "set NATOM TYPES",
     0
    ],
-   "coordsFile": ["set ATOMIC COORDINATES FILE", 
-     "coordinates.inp"],
-   "domainFile": ["set DOMAIN VECTORS FILE", 
-     "domainVectors.inp"]
+   "coordsFile": [
+    "set ATOMIC COORDINATES FILE",
+    "coordinates.inp"
+   ],
+   "domainFile": [
+    "set DOMAIN VECTORS FILE",
+    "domainVectors.inp"
+   ],
+   "ionForce": [
+    "set ION FORCE",
+    false
+   ],
+   "cellStress": [
+    "set CELL STRESS",
+    false
+   ]
   },
   "Boundary conditions": {
    "p1": [
     "set PERIODIC1",
-    false
+    true
    ],
    "p2": [
     "set PERIODIC2",
-    false
+    true
    ],
    "p3": [
     "set PERIODIC3",
+    true
+   ],
+   "smearedNuclearCharge": [
+    "set SMEARED NUCLEAR CHARGES",
+    true
+   ],
+   "floatingNuclearCharge": [
+    "set FLOATING NUCLEAR CHARGES",
+    true
+   ]
+  },
+  "Brillouin zone k point sampling options": {
+   "useGroupSymm": [
+    "set USE GROUP SYMMETRY ",
     false
+   ],
+   "useTimeReveralSymm": [
+    "set USE TIME REVERSAL SYMMETRY",
+    false
+   ],
+   "kPtRuleFile": [
+    "set kPOINT RULE FILE",
+    " "
+   ],
+   "Monkhorst-Pack (MP) grid generation": {
+    "MPGrid1": [
+     "set SAMPLING POINTS 1",
+     1
+    ],
+    "MPGrid2": [
+     "set SAMPLING POINTS 2",
+     1
+    ],
+    "MPGrid3": [
+     "set SAMPLING POINTS 3",
+     1
+    ],
+    "MPShift1": [
+     "set SAMPLING SHIFT 1",
+     0
+    ],
+    "MPShift2": [
+     "set SAMPLING SHIFT 2",
+     0
+    ],
+    "MPShift3": [
+     "set SAMPLING SHIFT 3",
+     0
+    ]
+   }
+  },
+  "Parallelization": {
+   "npkpt": [
+    "set NPKPT ",
+    1
    ]
   },
   "GPU": {
@@ -54,15 +120,27 @@
    "useELPA": [
     "set USE ELPA GPU KERNEL",
     false
+   ],
+   "autoGPUBlockSizes": [
+    "set AUTO GPU BLOCK SIZES",
+    false
+   ],
+   "fineGrainedGPUTimings": [
+    "set FINE GRAINED GPU TIMINGS",
+    true
    ]
   },
   "Post-processing Options": {
    "printKin": [
     "set PRINT KINETIC ENERGY ",
-    true
+    false
    ],
    "writeDensityQuad": [
     "set WRITE DENSITY QUAD DATA",
+    false
+   ],
+   "writeDensityFEMesh": [
+    "set WRITE DENSITY FE MESH",
     false
    ]
   },
@@ -73,35 +151,39 @@
    ],
    "feorderES": [
     "set POLYNOMIAL ORDER ELECTROSTATICS",
-    6
+    7
    ],
    "Auto mesh generation parameters": {
     "meshAt": [
      "set MESH SIZE AT ATOM",
-     0.06
+     0.003
     ],
     "meshAround": [
      "set MESH SIZE AROUND ATOM",
-     0.45
+     0.04
     ],
     "atomBallRad": [
      "set ATOM BALL RADIUS",
-     4.0
+     6.0
     ],
     "innerAtomBallRad": [
      "set INNER ATOM BALL RADIUS",
-     0.5
+     0.1
     ]
    }
   },
   "DFT functional parameters": {
    "xc": [
     "set EXCHANGE CORRELATION TYPE",
-    "LDA-PW"
+    "GGA-PBE"
    ],
    "psp": [
     "set PSEUDOPOTENTIAL CALCULATION",
     false
+   ],
+   "pspFileNamesList": [
+    "set PSEUDOPOTENTIAL FILE NAMES LIST",
+    "pseudo.inp"
    ],
    "spin": [
     "set SPIN POLARIZATION",
@@ -131,7 +213,7 @@
    ],
    "temp": [
     "set TEMPERATURE",
-    10
+    500
    ],
    "tol": [
     "set TOLERANCE",
@@ -140,11 +222,35 @@
    "Eigen-solver parameters": {
     "chebTol": [
      "set CHEBYSHEV FILTER TOLERANCE",
-     0.0001
+     0.0
+    ],
+    "chebPolyDeg": [
+     "set CHEBYSHEV POLYNOMIAL DEGREE",
+     0
+    ],
+    "chebPolyDegScalFirstSCF": [
+     "set CHEBYSHEV POLYNOMIAL DEGREE SCALING FACTOR FIRST SCF",
+     1.34
+    ],
+    "chebyWFCBlockSize": [
+     "set CHEBY WFC BLOCK SIZE",
+     200
+    ],
+    "wfcBlockSize": [
+     "set WFC BLOCK SIZE",
+     400
+    ],
+    "numKSWfc": [
+     "set NUMBER OF KOHN-SHAM WAVEFUNCTIONS",
+     0
     ],
     "ortho": [
      "set ORTHOGONALIZATION TYPE",
-     "CGS"
+     "Auto"
+    ],
+    "subspaceProjShepGpu": [
+     "set SUBSPACE PROJ SHEP GPU",
+     false
     ]
    }
   }

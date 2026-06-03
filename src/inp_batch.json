@@ -1,0 +1,20 @@
+{
+  "sysJSON": {"primary": "HBCI_ccpvqz.json"},
+  "execPath": "./dftfe_exe",
+  "pspUPFPath" : {"Li": "<upf path>" , "F": "<upf path>"},
+  "invdft" : {"secondary": "LDA_ccpvqz.json", "basisDir": "./basis_ccpvqz", "basisName": "ccpvqz", "invParamsFname": "invParams.prm"},
+  "rootDir": "./test",
+  "inpLengthUnit": "Angs",
+  "gsParamsFname": "gsParams.prm",
+  "outFname": "out",
+  "domain": [[80, 0.0, 0.0], [0.0, 80.0, 0.0], [0.0, 0.0, 80.0]],
+  "inpParamsJSON": "inpAllParams.json",
+  "modulesAndEnv": "./modulesAndEnv",
+  "device": "gpu",
+  "jobscript": "jobscript",
+  "sysComputeInfo": [
+    {"sysRange": {"start": null, "end": null}, "nodesPerSys": 6},
+    {"sysRange": {"start": null, "end": null}, "nodesPerSys": 6}
+  ],
+  "slurm": {"tasksPerNode": 8, "cpusPerTask":7, "t": "0:30:00", "partition": "batch", "queue": "debug", "account": "mat295", "jobname": "batchProj", "extra": [], "email": "bikash@umich.edu"}
+}

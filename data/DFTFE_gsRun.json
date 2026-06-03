@@ -1,0 +1,175 @@
+{
+  "LiHs:LiH_01.59": {
+    "symbols": [
+      "Li",
+      "H"
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.59
+      ]
+    ],
+    "domain": [
+      [
+        80,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        80.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        80.0
+      ]
+    ],
+    "ionForce": true,
+    "cellStress": true,
+    "smearedNuclearCharge": true,
+    "floatingNuclearCharge": true,
+    "useGroupSymm": true,
+    "useTimeReveralSymm": true,
+    "MPGrid1": 1,
+    "MPGrid2": 1,
+    "MPGrid3": 1,
+    "MPShift1": 0,
+    "MPShift2": 0,
+    "MPShift3": 0,
+    "gpu": true,
+    "writeStructEF": true,
+    "p1": false,
+    "p2": false,
+    "p3": false,
+    "kPtRuleFile": " ",
+    "npkpt": 1,
+    "useGPU": false,
+    "useELPA": false,
+    "autoGPUBlockSizes": true,
+    "fineGrainedGPUTimings": false,
+    "printKin": true,
+    "writeDensityQuad": false,
+    "writeDensityFEMesh": false,
+    "feorder": 4,
+    "feorderES": 6,
+    "meshAt": 0.06,
+    "meshAround": 0.45,
+    "atomBallRad": 4.0,
+    "innerAtomBallRad": 0.5,
+    "xc": "LDA-PW",
+    "psp": false,
+    "pspFileNamesList": " ",
+    "spin": 0,
+    "startmag": 0,
+    "mixParam": 0.2,
+    "mixMethod": "ANDERSON",
+    "energyEachIter": false,
+    "startwfc": "RANDOM",
+    "temp": 10,
+    "tol": 1e-05,
+    "chebTol": 0.0001,
+    "chebPolyDeg": 0,
+    "chebPolyDegScalFirstSCF": 1.0,
+    "chebyWFCBlockSize": 50,
+    "wfcBlockSize": 50,
+    "numKSWfc": 10,
+    "ortho": "CGS",
+    "subspaceProjShepGpu": true
+  },
+  "LiHs:LiH_02.39": {
+    "symbols": [
+      "Li",
+      "H"
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.385
+      ]
+    ],
+    "domain": [
+      [
+        80,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        80.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        80.0
+      ]
+    ],
+    "ionForce": true,
+    "cellStress": true,
+    "smearedNuclearCharge": true,
+    "floatingNuclearCharge": true,
+    "useGroupSymm": true,
+    "useTimeReveralSymm": true,
+    "MPGrid1": 1,
+    "MPGrid2": 1,
+    "MPGrid3": 1,
+    "MPShift1": 0,
+    "MPShift2": 0,
+    "MPShift3": 0,
+    "verb": 5,
+    "gpu": true,
+    "writeStructEF": true,
+    "p1": false,
+    "p2": false,
+    "p3": false,
+    "kPtRuleFile": " ",
+    "npkpt": 1,
+    "useGPU": false,
+    "useELPA": false,
+    "autoGPUBlockSizes": true,
+    "fineGrainedGPUTimings": false,
+    "printKin": true,
+    "writeDensityQuad": false,
+    "writeDensityFEMesh": false,
+    "feorder": 4,
+    "feorderES": 6,
+    "meshAt": 0.06,
+    "meshAround": 0.45,
+    "atomBallRad": 4.0,
+    "innerAtomBallRad": 0.5,
+    "xc": "LDA-PW",
+    "psp": false,
+    "pspFileNamesList": " ",
+    "spin": 0,
+    "startmag": 0,
+    "mixParam": 0.2,
+    "mixMethod": "ANDERSON",
+    "energyEachIter": false,
+    "startwfc": "RANDOM",
+    "temp": 10,
+    "tol": 1e-05,
+    "chebTol": 0.0001,
+    "chebPolyDeg": 0,
+    "chebPolyDegScalFirstSCF": 1.0,
+    "chebyWFCBlockSize": 50,
+    "wfcBlockSize": 50,
+    "numKSWfc": 10,
+    "ortho": "CGS",
+    "subspaceProjShepGpu": true
+  }
+}
